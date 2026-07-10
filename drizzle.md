@@ -29,9 +29,9 @@ Generates SQL migration files based on changes in your Drizzle schema.
 
 ### Use when
 
-* You want to keep a history of database changes.
-* You're working on a team.
-* You're deploying to production.
+- You want to keep a history of database changes.
+- You're working on a team.
+- You're deploying to production.
 
 ### Result
 
@@ -87,21 +87,21 @@ Database updated immediately
 
 ### Use when
 
-* Rapid prototyping
-* Personal projects
-* Early development
-* You don't need migration history
+- Rapid prototyping
+- Personal projects
+- Early development
+- You don't need migration history
 
 ### Advantages
 
-* Faster workflow
-* No migration files to manage
+- Faster workflow
+- No migration files to manage
 
 ### Disadvantages
 
-* No version history
-* Harder to track schema changes
-* Not recommended for production or collaborative projects
+- No version history
+- Harder to track schema changes
+- Not recommended for production or collaborative projects
 
 ---
 
@@ -125,9 +125,9 @@ schema.ts
 
 ### Useful when
 
-* Working with an existing database
-* Reverse engineering a schema
-* Migrating a project to Drizzle ORM
+- Working with an existing database
+- Reverse engineering a schema
+- Migrating a project to Drizzle ORM
 
 ---
 
@@ -143,11 +143,11 @@ Opens Drizzle Studio.
 
 ### Features
 
-* Browse tables
-* View records
-* Insert data
-* Update data
-* Delete data
+- Browse tables
+- View records
+- Insert data
+- Update data
+- Delete data
 
 ---
 
@@ -183,9 +183,9 @@ Database updated
 
 **Recommended for:**
 
-* Production applications
-* Team projects
-* Applications where schema history matters
+- Production applications
+- Team projects
+- Applications where schema history matters
 
 ---
 
@@ -201,10 +201,10 @@ Database updated
 
 **Recommended for:**
 
-* Learning Drizzle
-* Prototyping
-* Hackathons
-* Small personal projects
+- Learning Drizzle
+- Prototyping
+- Hackathons
+- Small personal projects
 
 ---
 
@@ -212,12 +212,12 @@ Database updated
 
 | Command    | Creates SQL Migration? | Updates Database? | Common Use                    |
 | ---------- | ---------------------- | ----------------- | ----------------------------- |
-| `generate` | ✅ Yes                  | ❌ No              | Create migration files        |
-| `migrate`  | ❌ No                   | ✅ Yes             | Apply migrations              |
-| `push`     | ❌ No                   | ✅ Yes             | Sync schema directly          |
-| `pull`     | ❌ No                   | ❌ No              | Generate schema from database |
-| `studio`   | ❌ No                   | ❌ No              | Database GUI                  |
-| `check`    | ❌ No                   | ❌ No              | Validate migrations           |
+| `generate` | ✅ Yes                 | ❌ No             | Create migration files        |
+| `migrate`  | ❌ No                  | ✅ Yes            | Apply migrations              |
+| `push`     | ❌ No                  | ✅ Yes            | Sync schema directly          |
+| `pull`     | ❌ No                  | ❌ No             | Generate schema from database |
+| `studio`   | ❌ No                  | ❌ No             | Database GUI                  |
+| `check`    | ❌ No                  | ❌ No             | Validate migrations           |
 
 ---
 
