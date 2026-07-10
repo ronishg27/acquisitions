@@ -1,25 +1,36 @@
 {
-    "name": "acquisitions",
-    "version": "1.0.0",
-    "description": "",
-    "homepage": "https://github.com/ronishg27/acquisitions#readme",
-    "bugs": {
-        "url": "https://github.com/ronishg27/acquisitions/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ronishg27/acquisitions.git"
-    },
-    "license": "ISC",
-    "author": "",
-    "type": "module",
-    "main": "src/index.js",
-    "scripts": {
-        "start": "node src/index.js",
-        "dev": "node --watch src/index.js"
-    },
-    "dependencies": {
-        "dotenv": "^17.4.2",
-        "express": "^5.2.1"
-    }
+  "name": "acquisitions",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ronishg27/acquisitions#readme",
+  "bugs": {
+    "url": "https://github.com/ronishg27/acquisitions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronishg27/acquisitions.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "prettier": "^3.9.5"
+  }
 }
