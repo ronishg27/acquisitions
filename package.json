@@ -1,0 +1,25 @@
+{
+    "name": "acquisitions",
+    "version": "1.0.0",
+    "description": "",
+    "homepage": "https://github.com/ronishg27/acquisitions#readme",
+    "bugs": {
+        "url": "https://github.com/ronishg27/acquisitions/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ronishg27/acquisitions.git"
+    },
+    "license": "ISC",
+    "author": "",
+    "type": "module",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "node --watch src/index.js"
+    },
+    "dependencies": {
+        "dotenv": "^17.4.2",
+        "express": "^5.2.1"
+    }
+}
