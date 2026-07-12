@@ -8,6 +8,27 @@
       "when": 1783700889321,
       "tag": "0000_rapid_ultimatum",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1783763873935,
+      "tag": "0001_faulty_storm",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1783764445465,
+      "tag": "0002_pretty_lockheed",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1783765259953,
+      "tag": "0003_rare_hitman",
+      "breakpoints": true
     }
   ]
 }

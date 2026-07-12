@@ -15,14 +15,14 @@
   "type": "module",
   "main": "src/index.js",
   "imports": {
-    "#config/*": "./src/config/*",
-    "#controllers/*": "./src/controllers/*",
-    "#middleware/*": "./src/middleware/*",
-    "#models/*": "./src/models/*",
-    "#routes/*": "./src/routes/*",
-    "#services/*": "./src/services/*",
-    "#utils/*": "./src/utils/*",
-    "#validations/*": "./src/validations/*"
+    "#config": "./src/config/index.js",
+    "#controllers": "./src/controllers/index.js",
+    "#middleware": "./src/middleware/index.js",
+    "#models": "./src/models/index.js",
+    "#routes": "./src/routes/index.js",
+    "#services": "./src/services/index.js",
+    "#utils": "./src/utils/index.js",
+    "#validations": "./src/validations/index.js"
   },
   "scripts": {
     "start": "node src/index.js",
@@ -33,18 +33,22 @@
     "format:check": "prettier --check .",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",
+    "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "drizzle-orm": "^0.45.2",
     "express": "^5.2.1",
     "helmet": "^8.2.0",
+    "jsonwebtoken": "^9.0.3",
     "morgan": "^1.11.0",
-    "winston": "^3.19.0"
+    "winston": "^3.19.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
