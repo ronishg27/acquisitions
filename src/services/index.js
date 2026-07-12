@@ -1,1 +1,6 @@
-export { hashPassword, createUser } from './auth.service.js';
+export {
+  hashPassword,
+  comparePassword,
+  authenticateUser,
+  createUser,
+} from './auth.service.js';
