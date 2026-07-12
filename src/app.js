@@ -1,10 +1,11 @@
-import logger from '#config';
+import { logger } from '#config';
 import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import { authRoutes } from '#routes';
+import { securityMiddleware } from '#middleware';
 
 const app = express();
 
@@ -23,6 +24,8 @@ app.use(
     },
   })
 );
+
+app.use(securityMiddleware);
 
 app.get('/', (req, res) => {
   logger.info('Received request for / endpoint');

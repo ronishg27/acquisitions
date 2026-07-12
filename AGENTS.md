@@ -8,18 +8,18 @@
 
 ## Commands
 
-| npm run …         | Action                       |
-| ----------------- | ---------------------------- |
-| `dev`             | `node --watch src/index.js`  |
-| `start`           | `node src/index.js`          |
-| `lint`            | `eslint .`                   |
-| `lint:fix`        | `eslint . --fix`             |
-| `format`          | `prettier --write .`         |
-| `format:check`    | `prettier --check .`         |
-| `db:generate`     | `drizzle-kit generate`       |
-| `db:migrate`      | `drizzle-kit migrate`        |
-| `db:push`         | `drizzle-kit push`           |
-| `db:studio`       | `drizzle-kit studio`         |
+| npm run …      | Action                      |
+| -------------- | --------------------------- |
+| `dev`          | `node --watch src/index.js` |
+| `start`        | `node src/index.js`         |
+| `lint`         | `eslint .`                  |
+| `lint:fix`     | `eslint . --fix`            |
+| `format`       | `prettier --write .`        |
+| `format:check` | `prettier --check .`        |
+| `db:generate`  | `drizzle-kit generate`      |
+| `db:migrate`   | `drizzle-kit migrate`       |
+| `db:push`      | `drizzle-kit push`          |
+| `db:studio`    | `drizzle-kit studio`        |
 
 **DB workflow (recommended):** `db:generate` → `db:migrate`. Use `db:push` for prototyping only.
 

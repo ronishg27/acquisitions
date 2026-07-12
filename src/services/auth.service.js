@@ -1,4 +1,4 @@
-import logger, { db } from '#config';
+import { db, logger } from '#config';
 import { users } from '#models';
 import bcrypt from 'bcrypt';
 import { eq } from 'drizzle-orm';

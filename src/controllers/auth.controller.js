@@ -1,4 +1,4 @@
-import logger from '#config';
+import { logger } from '#config';
 import { authenticateUser, createUser } from '#services';
 import { cookies, formatValidationErrors, jwtToken } from '#utils';
 import { signinSchema, signupSchema } from '#validations';
