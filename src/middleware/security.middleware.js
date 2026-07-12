@@ -43,7 +43,8 @@ const securityMiddleware = async (req, res, next) => {
 
     const decision = await client.protect(req);
 
-    if (decision.isDenied) {
+    if (decision.isDenied()) {
+      console.log('Reason: ', decision.reason);
       if (decision.reason.isBot()) {
         logger.warn('Bot request blocked:', {
           ip: req.ip,
@@ -85,7 +86,7 @@ const securityMiddleware = async (req, res, next) => {
       }
     }
 
-    next();
+    return next();
   } catch (error) {
     console.error('Error in security middleware:', error);
     res.status(500).json({
